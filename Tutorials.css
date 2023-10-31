@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma;
+    height: 3000px;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70px;
+    height: 110px;
+    border: 2px solid rgb(95, 158, 252);
+    border-radius: 7px;
+}
+
+.box:hover{
+    background-color: rgb(95, 158, 252);
+}
+
+.box:hover span:not(:last-child){
+    border-bottom: 2px solid white;
+}
+
+.box:hover .days{
+    color: white;
+}
+.box:hover .hours{
+    color: white;
+}
+.box:hover .minutes{
+    color: white;
+}
+.box:hover .seconds{
+    color: white;
+}
+.box:hover span:not(:first-child){
+    color: white;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+    padding: 23px 0px;
+    color: rgb(95, 158, 252);
+}
+
+span {
+    padding: 6px;
+}
+
+span:not(:last-child) {
+    border-bottom: 2px solid rgb(95, 158, 252);
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+span:not(:first-child) {
+    font-size: 12px;
+}
